@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+	
+<style>
+    html,body,h1,input
+    select{font-family:Arial,sans-serif}
+    body,h1{font-size:14px;}
+    h1{font-weight:normal;margin:0;padding:0}
+    h2{font-weight:bold;margin:0;padding:0;font-size:30px;line-height:2}
+    h3{font-weight:normal;margin:0;padding:0;font-size:20px;line-height:1.3}
+    body{margin:0;background:#fff;color:var(--COEmY);}
+	
+		
+	.hero-area {
+  background-color: #f1f1f1; /* Màu nền nhẹ cho khu vực hero */
+  padding: 100px 0; /* Khoảng cách xung quanh */
+  text-align: center;
+}
+
+.hero-area .hero-area-slider {
+  display: flex;
+  align-items: left;
+  justify-content:space-evenly;
+  flex-direction:row;
+  gap: 300px; /* Nới rộng khoảng cách giữa các phần tử */
+  height:fit-content;
+}
+
+/* Cải tiến layout cho các phần hero-area-content */
+.hero-area .hero-area-content {
+  max-width: 400px; /* Đặt chiều rộng tối đa */
+  margin: 0 auto; /* Căn giữa nội dung */
+}
+
+.hero-area .hero-area-content img {
+  width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng */
+  height: auto; /* Giữ tỉ lệ ảnh */
+  border-radius: 8px; /* Bo góc ảnh */
+}
+
+/* Cải tiến cho tiêu đề h2 */
+.hero-area .hero-area-content h2 {
+  font-size: 36px;
+  color: #333;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Review section */
+.hero-area .review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hero-area .author-review {
+  display: flex;
+}
+
+.hero-area .icofont-star {
+  color: #f39c12;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.hero-area .review h4 {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #777;
+}
+
+/* Phần mô tả */
+.hero-area p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Các phần cho dàn diễn viên (Cast) */
+.hero-area .slide-cast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hero-area .single-slide-cast {
+  margin: 10px;
+  text-align: center;
+}
+
+.hero-area .single-slide-cast img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-area .single-slide-cast.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-color: #f39c12;
+  color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+/* Phần trailer */
+.hero-area .slide-trailor {
+  margin-top: 50px;
+  gap: 200px;
+}
+
+.hero-area .slide-trailor h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  gap: 200px;
+}
+    </style>
+	
+<!-- hero area start -->
+<section class="hero-area" id="home">
+	<div class="container">
+		<div class="hero-area-slider">
+			<div class="row hero-area-slide">
+				<div class="col-lg-6 col-md-5">
+					<div class="hero-area-content">
+						<img src="../../../image/Tầng lớp itaewonn.jpg" alt="about" />
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-7">
+					<div class="hero-area-content pr-50">
+						<h2>Tầng lớp Itaewon</h2>
+						<div class="review">
+							<div class="author-review">
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+							</div>
+							<h3>Rating: 8.8 IMB</h3>
+						</div>
+						<p>Tại một khu phố nhộn nhịp của Seoul, một cựu tù nhân và bạn bè mình chiến đấu với đối thủ khó nhằn để biến tham vọng quán bar đường phố của họ thành hiện thực....</p>
+						<h3>Cast:</h3>
+						<div class="slide-cast">
+							<div class="single-slide-cast">
+								<img src="../../../image/Park Seo Joon.jpg" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Kim da-mi.webp" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Kwon Nara.jfif" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Ahn Bo-hyun.jpg" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Chris_Lyon.jpg" alt="about" />
+							</div>
+							<div class="single-slide-cast text-center">
+								5+
+							</div>
+						</div>
+						<div class="slide-trailor">
+							<h3>Watch Trailer</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/NeaHNQJ1kCo?si=VOHCa-Yq0QdC2hre" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row hero-area-slide">
+				<div class="col-lg-6 col-md-5">
+					<div class="hero-area-content">
+						<img src="../../../image/the-glory.webp" alt="about" />
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-7">
+					<div class="hero-area-content pr-50">
+						<h2>The Glory</h2>
+						<div class="review">
+							<div class="author-review">
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+							</div>
+							<h3>Rating: 8.5 IMB</h3>
+						</div>
+						<p>Nhiều năm sau khi thoát khỏi cảnh bạo lực kinh hoàng ở trường cấp ba, một phụ nữ tiến hành âm mưu trả thù đầy tinh vi để khiến các thủ phạm phải trả giá cho tội ác của mình....</p>
+						<h3>Cast:</h3>
+						<div class="slide-cast">
+							<div class="single-slide-cast">
+								<img src="../../../image/Song-Hye-Kyo.jpeg" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Lim Ji-yeon.jfif" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Lee Do-hyun.jfif" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/kim-hieora.webp" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/park-sung-hoon.png" alt="about" />
+							</div>
+							<div class="single-slide-cast text-center">
+								5+
+							</div>
+						</div>
+						<div class="slide-trailor">
+							<h3>Watch Trailer</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/tqVVrTvrI8U?si=9I07n0_CVXMVHi0P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row hero-area-slide">
+				<div class="col-lg-6 col-md-5">
+					<div class="hero-area-content">
+						<img src="../../../image/Điều kỳ diệu ở phòng giam số 7.webp" alt="about" />
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-7">
+					<div class="hero-area-content pr-50">
+						<h2>Điều kỳ diệu ở phòng giam số 7</h2>
+						<div class="review">
+							<div class="author-review">
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+								<i class="icofont icofont-star"></i>
+							</div>
+							<h3>Rating: 9.1 IMB</h3>
+						</div>
+						<p>Câu chuyện giữa hai cha con và những phạm nhân trong tù mang lại cả nụ cười và nước mắt...</p>
+						<h3>Cast:</h3>
+						<div class="slide-cast">
+							<div class="single-slide-cast">
+								<img src="../../../image/Ryu Seung-ryong.jfif" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Kal So-won.jfif" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Jung Jin-young.jfif" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Jung Man-sik.jfif" alt="about" />
+							</div>
+							<div class="single-slide-cast">
+								<img src="../../../image/Kim Jung_tae.jfif" alt="about" />
+							</div>
+							<div class="single-slide-cast text-center">
+								5+
+							</div>
+						</div>
+						<div class="slide-trailor">
+							<h3>Watch Trailer</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/z4WbNyKChY0?si=vVqnVLZpi_034WE3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-area-thumb">
+			<div class="thumb-prev">
+				<div class="row hero-area-slide">
+					<div class="col-lg-6">
+						<div class="hero-area-content">
+							<img src="../../../image/reply 1988.jpg" alt="about" />
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="hero-area-content pr-50">
+							<h2>Reply 1988</h2>
+							<div class="review">
+								<div class="author-review">
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+								</div>
+								<h3>Rating: 9.3 IMB</h3>
+							</div>
+							<p>Bộ phim xoay quanh cuộc sống của 5 gia đình trong một khu xóm nhỏ, những vấn đề gì sẽ xảy ra với họ? Bi có, hài có sẽ khiến người xem dở khóc dở cười....</p>
+							<h3>Cast:</h3>
+							<div class="slide-cast">
+								<div class="single-slide-cast">
+									<img src="../../../image/Hyeri.jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="../../../image/Ryu Jun-yeol.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="../../../image/Go Kyung-pyo.jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="../../../image/Lee Dong-hwi.jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="../../../image/Park Bo Gum.webp" alt="about" />
+								</div>
+								<div class="single-slide-cast text-center">
+									5+
+								</div>
+							</div>
+							<div class="slide-trailor">
+								<h3>Watch Trailer</h3>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/SIpNSp3IYDU?si=cpaFjj2pJlyxtC1W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="thumb-next">
+				<div class="row hero-area-slide">
+					<div class="col-lg-6">
+						<div class="hero-area-content">
+							<img src="../../../image/Handsome_Guys.jpg" alt="about" />
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="hero-area-content pr-50">
+							<h2>Handsome Guys</h2>
+							<div class="review">
+								<div class="author-review">
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+								</div>
+								<h3>Rating: 7.5 IMB</h3>
+							</div>
+							<p>Phim mượn hình tượng nhân vật để lên án hành vi phân biệt đối xử, kỳ thị người khác qua ngoại hình...</p>
+							<h3>Cast:</h3>
+							<div class="slide-cast">
+								<div class="single-slide-cast">
+									<img src="../../../image/Lee Sung-min.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="../../../image/Lee Hee-joon.jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="../../../image/Gong Seung-yeon.jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="../../../image/Park Jeong-hwa.jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="../../../image/Jang Dong-joo.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast text-center">
+									5+
+								</div>
+							</div>
+							<div class="slide-trailor">
+								<h3>Watch Trailer</h3>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/mEb9mRo93Is?si=waFYwSZhqwJFn5CR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- hero area end -->
+		</body>
+	</html>
